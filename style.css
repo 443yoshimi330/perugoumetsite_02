@@ -1,0 +1,222 @@
+* {
+    font-family: "Nico Moji";
+}
+
+.kv {
+    position: relative;
+}
+
+.container {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    animation: image_anime 10s ease infinite;
+}
+
+@keyframes image_anime {
+    0% {
+        background-image: url(./peruphoto/IMG_4143.JPG);
+    }
+
+    33% {
+        background-image: url(./peruphoto/IMG_5238.JPG);
+    }
+
+    66% {
+        background-image: url(./peruphoto/IMG_0523.JPG);
+    }
+
+    100% {
+        background-image: url(./peruphoto/IMG_4143.JPG);
+    }
+}
+
+h1 {
+    font-size: 80px;
+    color: #f99292;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 376px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+.content {
+    width: 132px;
+    height: 88px;
+}
+
+
+.content:nth-child(1) {
+    background-image: url(./peru-132_88/IMG_5366.JPG);
+}
+
+.content:nth-child(2) {
+    background-image: url(./peru-132_88/IMG_4938.JPG);
+}
+
+.content:nth-child(3) {
+    background-image: url(./peru-132_88/rainbow3.JPG);
+}
+
+.content:nth-child(4) {
+    background-image: url(./peru-132_88/machupicchu2.JPG);
+}
+
+.content:nth-child(5) {
+    background-image: url(./peru-132_88/llama.JPG);
+}
+
+.content:nth-child(6) {
+    background-image: url(./peru-132_88/peru3.JPG);
+}
+
+.content:nth-child(7) {
+    background-image: url(./peru-132_88/IMG_4970.JPG);
+}
+
+.content:nth-child(8) {
+    background-image: url(./peru-132_88/IMG_5285.JPG);
+}
+
+.content:nth-child(9) {
+    background-image: url(./peru-132_88/IMG_5369.JPG);
+}
+
+.content:nth-child(10) {
+    background-image: url(./peru-132_88/rainbow2.JPG);
+}
+
+
+.slideshow {
+    display: flex;
+    animation: loop-slide 30s infinite linear both;
+}
+
+@keyframes loop-slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.wrap {
+    display: flex;
+    height: 88px;
+    overflow: hidden;
+}
+
+/* 料理説明 */
+figure.hover-parent {
+    width: 550px;
+    height: 550px;
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+figcaption.hover-mask {
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    opacity: 0;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+@media screen and (max-width: 376px) {
+    figure.hover-parent {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 0;
+
+    }
+
+    figcaption.hover-mask {
+        width: 300px;
+        height: 300px;
+        font-size: 15px;
+    
+
+    }
+
+}
+
+figure.hover-parent:hover .hover-mask {
+    opacity: 1;
+    transition: all 0.6s ease;
+}
+
+@media screen and (min-width:376px) {
+    figure.hover-parent:hover .hover-mask {
+        opacity: 1;
+        transition: all 0.6s ease;
+
+    }
+}
+
+p {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    color: #fff4e0;
+}
+
+@media screen and (max-width: 376px) {
+    p {
+        font-size: 20px;
+        padding: 20px;
+    }
+}
+
+img {
+    width: 550px;
+    height: 550px;
+    display: block;
+    padding: 30px;
+}
+
+@media screen and (max-width: 376px) {
+    img {
+        width: 300px;
+        height: 300px;
+
+    }
+
+}
+
+.fug {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #ffc679;
+}
+
+footer {
+    font-size: 20px;
+    background-color: #ffc679;
+    color: #f99292;
+    text-align: center;
+}
+
+@media screen and (max-width: 376px) {
+    footer {
+        font-size: 15px;
+    }
+}
